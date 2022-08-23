@@ -1,0 +1,40 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.container {
+  display: block;
+  margin: 10px auto ;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+span {
+  font-size: 20px;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 35px;
+  margin-left: 6px;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  margin-left: 6px;
+}
+.row3 {
+}
+.row4 {
+  margin-left: 33px;
+}
+
+.row5 {
+  margin-left: 6px;
+}

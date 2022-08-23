@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Horizontal from "./components/Horizontal";
+import Vertical from "./components/Vertical";
 
 function App() {
+  const [direction, setDirection] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        <button onClick={() => setDirection('vertical')}>Vertical</button>
+        <button onClick={() => setDirection('horizontal')}>Horizontal</button>
+      </div>
+      {direction === "vertical" ? <Vertical /> : <Horizontal />}
     </div>
   );
 }
